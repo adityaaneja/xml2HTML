@@ -16,8 +16,6 @@ def lambda_handler(event, context):
     
     
     s3source = boto3.resource('s3')
-   # obj=s3source.Object(bucket, key)
-   # obj.get()["Body"].read()
     
     #EXTRACT XSLT URL
     tempxmlfile=os.path.join("/tmp/" + filename +".xml")
